@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donuts Delícia</title>
+
+    <link rel="shortcut icon" href="imagens/favicon.ico">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estiloscardapio.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="geral">
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imagens/logo.jpg" alt="Logo Donuts Delícia">
+                </a>
+            </div>
+
+            <nav id="menu">
+                <a href="index.html">Home</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+        </header>
+
+        <main id="conteudo">
+            <section id="cardapio">
+                <div class="card">
+                    <div class="imgCard">
+                        <img src="imagens/donut1.jpg" alt="Donut de Chocolate">
+                    </div>
+                    <div class="descricao">Donut de Chocolate</div>
+                    <div class="detalhe">Cobertura de chocolate, granulado</div>
+                    <div class="valor">R$ 5,00</div>
+                    <div class="btnAdd">
+                        <button class="add">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgCard">
+                        <img src="imagens/donut2.jpg" alt="Donut Glaceado">
+                    </div>
+                    <div class="descricao">Donut Glaceado</div>
+                    <div class="detalhe">Cobertura glaceada, confetes coloridos</div>
+                    <div class="valor">R$ 5,50</div>
+                    <div class="btnAdd">
+                        <button class="add">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgCard">
+                        <img src="imagens/donut3.jpg" alt="Donut de Framboesa">
+                    </div>
+                    <div class="descricao">Donut de Framboesa</div>
+                    <div class="detalhe">Recheio de framboesa, açúcar de confeiteiro</div>
+                    <div class="valor">R$ 6,00</div>
+                    <div class="btnAdd">
+                        <button class="add">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgCard">
+                        <img src="imagens/donut4.jpg" alt="Donut de Baunilha">
+                    </div>
+                    <div class="descricao">Donut de Baunilha</div>
+                    <div class="detalhe">Cobertura de baunilha, sprinkles coloridos</div>
+                    <div class="valor">R$ 5,50</div>
+                    <div class="btnAdd">
+                        <button class="add">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgCard">
+                        <img src="imagens/donut5.jpg" alt="Donut com Caramelo">
+                    </div>
+                    <div class="descricao">Donut com Caramelo</div>
+                    <div class="detalhe">Cobertura de caramelo, sal grosso</div>
+                    <div class="valor">R$ 6,50</div>
+                    <div class="btnAdd">
+                        <button class="add">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgCard">
+                        <img src="imagens/donut6.jpg" alt="Donut de Café">
+                    </div>
+                    <div class="descricao">Donut de Café</div>
+                    <div class="detalhe">Recheio de café expresso, cobertura de chocolate</div>
+                    <div class="valor">R$ 6,00</div>
+                    <div class="btnAdd">
+                        <button class="add">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgCard">
+                        <img src="imagens/donut7.jpg" alt="Donut de Morango">
+                    </div>
+                    <div class="descricao">Donut de Morango</div>
+                    <div class="detalhe">Cobertura de morango, pedaços de morango</div>
+                    <div class="valor">R$ 5,50</div>
+                    <div class="btnAdd">
+                        <button class="add">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgCard">
+                        <img src="imagens/donut8.jpg" alt="Donut com Creme">
+                    </div>
+                    <div class="descricao">Donut com Creme</div>
+                    <div class="detalhe">Recheio de creme, cobertura de açúcar</div>
+                    <div class="valor">R$ 6,00</div>
+                    <div class="btnAdd">
+                        <button class="add">Adicionar</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <aside id="sacola">
+                <div id="btnSacola">
+                    <div id="total">
+                        <div>Total R$</div>
+                        <div id="vlrTotal"></div>
+                    </div>
+                </div>
+
+                <div id="itens">
+                    <!-- Exemplo de um item na sacola -->
+                    <div class="item">
+                        <div class="descSacola"></div>
+                        <div class="quantidade"></div>
+                        <div class="vlrSacola"></div>
+                        <div class="totItem vlrSacola"></div>
+                        <div class="btnRemover">
+                            
+                        </div>
+                    </div>
+
+                    <!-- Adicione mais itens conforme necessário -->
+                    
+                </div>
+            </aside>
+        </main>
+
+        <footer id="rodape">
+            <p>&copy; 2023 Todos os direitos reservados para Donuts & Cia</p>
+            <p>CNPJ: 00.008.111/1XXXX-00 - Rua Doce Vida, 123, São Paulo, SP, 12345-678 - Tel.: 011912345678</p>
+        </footer>
+    </div>
+</body>
+
+</html>

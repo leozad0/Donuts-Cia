@@ -1,0 +1,236 @@
+/* Reset básico para garantir que os estilos sejam consistentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+#geral {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header#cabecalho {
+    background-color: #ffb3b3;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    max-width: 150px;
+}
+
+nav#menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #ff9999;
+}
+
+nav#menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav#menu a:hover {
+    background-color: #ff6666;
+}
+
+main#conteudo {
+    margin: 20px 0;
+}
+
+/* Seção de Introdução */
+#intro {
+    background-color: #fff3e6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#intro .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#intro h1 {
+    font-size: 2.5em;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#intro .btn {
+    background-color: #ff9999;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+#intro .btn:hover {
+    background-color: #ff6666;
+}
+
+/* Seção de Destaques */
+#destaques {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+#destaques .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza as cards horizontalmente */
+}
+
+#destaques h2 {
+    text-align: center;
+    color: #e74c3c;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Card */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Cantos arredondados mais acentuados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px); /* 3 cards por linha na visualização padrão */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do Card */
+.imgCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Arredondamento da imagem */
+    border-bottom: 2px solid #ddd; /* Linha separadora mais destacada */
+}
+
+/* Descrição e Valor */
+.descricao {
+    font-size: 1.2em;
+    color: #333;
+    margin: 15px 0;
+    font-weight: bold; /* Destacar a descrição */
+}
+
+.detalhe {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.valor {
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin: 10px 0;
+    font-weight: bold; /* Destacar o valor */
+}
+
+/* Seção Sobre Nós */
+#sobre {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#sobre .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sobre h2 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Seção do Carrinho de Compras */
+aside#sacola {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#itens .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.descSacola {
+    flex: 2;
+    font-size: 1em;
+}
+
+.quantidade, .vlrSacola, .totItem {
+    flex: 1;
+    text-align: center;
+}
+
+.btnRemover img {
+    width: 20px;
+    cursor: pointer;
+}
+
+footer#rodape {
+    background-color: #ff9999;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer#rodape p {
+    margin: 5px 0;
+}
